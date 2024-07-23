@@ -10,7 +10,9 @@ def home():
 def test():
     return render_template('redko.html')
 
-
+@app.route("/resume")
+def what():
+    return render_template('resume.html')
 
 if __name__ == '__main__':
     app.debug = True
