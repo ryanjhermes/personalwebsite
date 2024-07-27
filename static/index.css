@@ -15,16 +15,20 @@ html, body {
     align-items: flex-start;
     flex-direction: column;
     height: 100%;
-    margin: 0;
+    margin-left: 10px;
     width: 100%;
     background-color: #000000;
     border-radius: 30px;
     transition: box-shadow 0.3s ease;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(to right, #000000, 60%, #00000052),url("fintech.jpg");
     background-size: 1624px 904px;
     background-repeat: no-repeat;
     background-position: right 80% bottom 0%;
+}
+
+#background {
+    background: linear-gradient(to right, #000000, 60%, #00000052),url("fintech.jpg");
+    margin-left: 120px;
 }
 
 #name {
@@ -67,6 +71,24 @@ html, body {
     -webkit-background-clip: text;
 }
 
+#biz {
+    font-weight: 600;
+    text-shadow: 0px 0px 50px #6a6a6a;
+    transition: font-size 0.3s ease;
+    background: #21b13b;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#technology {
+    font-weight: 600;
+    text-shadow: 0px 0px 50px #6a6a6a;
+    transition: font-size 0.3s ease;
+    background: #6fb2ff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 #aka {
     font-size: 16px;
     margin-left: 160px;
@@ -76,7 +98,7 @@ html, body {
 
 #contact {
     text-align: left;
-    margin-top: -10px;
+    margin-top: 20px;
     margin-left: 160px;
 }
 
@@ -90,15 +112,15 @@ html, body {
     color: #6fb2ff
 }
 
-.resumebutton {
-    /*/ margin-left: 50px; */
-    padding: 10px 20px;
-    font-weight: 100;
-    color: #6fb2ff;
+.resume-link {
+    align-self: center; /* Center align the resume link */
+    margin-top: 20px; /* Add some top margin if needed */
+    font-weight: 300;
     background-color: transparent;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 60px;
+    font-size: 30px;
+    color: rgb(239, 197, 82);
 }
