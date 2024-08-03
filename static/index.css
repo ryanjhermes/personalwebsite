@@ -73,7 +73,6 @@ html, body {
 
 #biz {
     font-weight: 600;
-    text-shadow: 0px 0px 50px #6a6a6a;
     transition: font-size 0.3s ease;
     background: #21b13b;
     -webkit-text-fill-color: transparent;
@@ -82,7 +81,6 @@ html, body {
 
 #technology {
     font-weight: 600;
-    text-shadow: 0px 0px 50px #6a6a6a;
     transition: font-size 0.3s ease;
     background: #6fb2ff;
     -webkit-text-fill-color: transparent;
