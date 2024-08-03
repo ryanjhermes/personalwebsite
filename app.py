@@ -6,10 +6,6 @@ app = Flask(__name__, static_folder='static', template_folder='templates')
 def home():
     return render_template('index.html')
 
-@app.route("/redko")
-def test():
-    return render_template('redko.html')
-
 @app.route("/resume")
 def resume():
     return send_from_directory(app.static_folder, 'resume.pdf')
