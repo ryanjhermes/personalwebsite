@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Response
+from flask import Flask, render_template, send_from_directory
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 
@@ -11,8 +11,8 @@ def test():
     return render_template('redko.html')
 
 @app.route("/resume")
-def new():
-    return render_template('resume.html')
+def resume():
+    return send_from_directory(app.static_folder, 'resume.pdf')
 
 if __name__ == '__main__':
     app.debug = True
