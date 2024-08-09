@@ -79,7 +79,7 @@
 .resume-link {
     transition: background-color 0.3s ease;
     animation: slideInFromBottom 1.3s ease-in-out forwards;
-    animation-delay: 4.5s;
+    animation-delay: 3s;
     opacity: 0;
     color: rgb(239, 197, 82);
 }
@@ -88,15 +88,9 @@
     animation: appear 1.5s ease-in-out forwards, glow 2s ease-in-out 1s;
 }
 
-#description, #fintech, #aka {
+#description, #fintech, #aka, #contact, #email, #phone, #linkedin {
     animation: slideFadeIn 1.3s ease-in-out forwards;
     animation-delay: 1s;
-    opacity: 0;
-}
-
-#contact, #email, #phone, #linkedin  {
-    animation: appear 1s ease-in-out forwards;
-    animation-delay: 2s;
     opacity: 0;
 }
 

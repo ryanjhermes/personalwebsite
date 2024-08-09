@@ -27,7 +27,7 @@ html, body {
 }
 
 #background {
-    background: linear-gradient(to right, #000000, 60%, #00000052),url("fintech.jpg");
+    background: linear-gradient(to right, #000000, 60%, #00000052), url("fintech.jpg");
     margin-left: 120px;
 }
 
@@ -97,6 +97,7 @@ html, body {
 #contact {
     text-align: left;
     margin-top: 20px;
+    color: #6fb2ff;
     margin-left: 160px;
 }
 
@@ -107,7 +108,7 @@ html, body {
 
 #email, #phone, #linkedin {
     margin: 5px 0;
-    color: #6fb2ff
+    color: #6fb2ff;
 }
 
 .resume-link {
@@ -120,5 +121,18 @@ html, body {
     cursor: pointer;
     text-decoration: none;
     font-size: 30px;
-    color: rgb(239, 197, 82);
+    color: rgb(244, 218, 149);
+}
+
+.resume-preview {
+    margin-top: 10px;
+    max-width: 100px; /* Adjust the size as needed */
+    border: 2px solid #e3e3e3;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.resume-preview:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
 }
