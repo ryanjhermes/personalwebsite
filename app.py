@@ -24,6 +24,7 @@ def home():
     return render_template('index.html')
 
 @app.route("/sourcing-tool")
+@app.route("/sourcing-tool")
 def sourcing_tool():
     data = load_data()  # Load the data from the CSV file
     return render_template('sourcing_tool.html', data=data)  # Pass the data to the template
