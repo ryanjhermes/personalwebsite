@@ -28,6 +28,8 @@ def sourcing_tool():
     data = load_data()  # Load the data from the CSV file
     return render_template('sourcing_tool.html', data=data)  # Pass the data to the template
 
+
+
 @app.route("/resume")
 def resume():
     return send_from_directory(app.static_folder, 'resume.pdf')
