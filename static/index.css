@@ -309,8 +309,23 @@ html, body {
     transform: scale(1.1); /* Slight zoom effect on icon hover */
 }
 
-/* Accessibility and Responsiveness */
+/* Mobile Styles */
 @media (max-width: 768px) {
+    #name {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    #description {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    #contact {
+        margin-left: 20px;
+    }
+    .resume-link {
+        font-size: 20px;
+    }
+    
     #work-links {
         right: 10px;
         max-width: 200px;
@@ -318,5 +333,12 @@ html, body {
 
     .work-item p {
         font-size: 12px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none;
     }
 }
