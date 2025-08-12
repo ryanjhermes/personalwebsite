@@ -2,6 +2,12 @@ import Image from 'next/image';
 
 const items = [
   {
+    href: 'https://cliseo.com',
+    src: '/cliseo.png',
+    alt: 'cliseo',
+    text: 'Optimize your website for SEO in 30 seconds; open source',
+  },
+  {
     href: 'https://ryanjhermes.github.io/StartupShuffler/',
     src: '/StartupShuffler.png',
     alt: 'StartupShuffler',
@@ -23,14 +29,24 @@ const items = [
 
 export default function Projects() {
   return (
-    <section className="mt-12 w-full max-w-3xl">
-      <h3 className="text-lime mb-4">Some things I've built:</h3>
-      <ul className="grid gap-3">
+    <section className="relative z-10 mt-14 w-full max-w-4xl">
+      <div className="mb-6 flex items-end justify-between">
+        <h3 className="text-xl font-medium tracking-tight">Some things I've built</h3>
+        <div className="text-xs text-ink/60">Updated regularly</div>
+      </div>
+
+      <ul className="grid gap-4 sm:grid-cols-2">
         {items.map((it) => (
-          <li key={it.href} className="group flex items-center gap-3 rounded-md p-3 bg-white/5 hover:bg-white/10 transition">
-            <Image src={it.src} alt={it.alt} width={44} height={44} className="rounded shadow-sm group-hover:scale-105 transition" />
-            <a href={it.href} target="_blank" rel="noreferrer" className="text-ink hover:text-sky transition">
-              {it.text}
+          <li key={it.href} className="group card p-4">
+            <a href={it.href} target="_blank" rel="noreferrer" className="flex items-center gap-4">
+              <Image
+                src={it.src}
+                alt={it.alt}
+                width={56}
+                height={56}
+                className="rounded-lg shadow-sm group-hover:scale-[1.03] transition"
+              />
+              <span className="text-sm text-ink/90 group-hover:text-ink">{it.text}</span>
             </a>
           </li>
         ))}
