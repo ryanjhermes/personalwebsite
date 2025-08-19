@@ -5,7 +5,7 @@ const items = [
     href: 'https://cliseo.com',
     src: '/cliseo.png',
     alt: 'cliseo',
-    text: 'Optimize your website for SEO in 30 seconds; open source',
+    text: 'cliseo: Optimize your website for SEO in 30 seconds; open source',
   },
   {
     href: 'https://ryanjhermes.github.io/StartupShuffler/',
