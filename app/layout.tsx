@@ -1,7 +1,10 @@
 export const metadata = {
   title: 'Ryan Hermes',
   description: "Ryan Hermes's Personal Website",
-  metadataBase: new URL('https://ryanhermes.com')
+  metadataBase: new URL('https://ryanhermes.com'),
+  icons: {
+    icon: '/rh.ico',
+  },
 };
 
 import './globals.css';
